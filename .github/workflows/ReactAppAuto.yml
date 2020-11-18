@@ -29,9 +29,9 @@ jobs:
         with:
          cmd: install # Yarn command
       - name: Creating Build
-        run: npm build
+        run: yarn build
       - name: installing surge
         run: npm install -g surge
       - name: deploying surge
-        run: surge ./build http://ugliest-cake.surge.sh --token ${{ secrets.SURGE_TOKEN }}  
+        run: surge ./build ugliest-cake.surge.sh --token ${{ secrets.SURGE_TOKEN }}  
        
