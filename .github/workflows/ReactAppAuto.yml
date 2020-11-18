@@ -28,12 +28,11 @@ jobs:
       - name: GitHub Action for Yarn
         uses: Borales/actions-yarn@v2.3.0
         with:
-    # Yarn command
-         cmd: install
+         cmd: install # Yarn command
       - name: Creating Build
         run: npm build
       - name: installing surge
         run: npm install -g surge
       - name: deploying surge
-        run: yarn ./build http://ugliest-cake.surge.sh --token ${{secrets.SURGE_TOKEN }}  
+        run: surge ./build http://ugliest-cake.surge.sh --token ${{ secrets.SURGE_TOKEN }}  
        
