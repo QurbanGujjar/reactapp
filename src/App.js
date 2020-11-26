@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React With Qurban uuuuuaaahhhaa
+          Learn React With Qurban Ali Gujjar
         </a>
       </header>
     </div>
